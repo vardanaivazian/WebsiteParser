@@ -1,4 +1,4 @@
-package electro;
+package electricity;
 
 import java.util.List;
 

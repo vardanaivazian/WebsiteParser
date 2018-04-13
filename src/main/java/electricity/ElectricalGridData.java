@@ -1,4 +1,4 @@
-package electro;
+package electricity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class ElectricalGridData implements Subject {
     private List<Observer> observers;
 
     public ElectricalGridData() {
-        this.observers = new ArrayList<Observer>();
+        this.observers = new ArrayList<>();
     }
 
     public void registerObserver(Observer observer) {

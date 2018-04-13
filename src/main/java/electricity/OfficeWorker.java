@@ -1,4 +1,4 @@
-package electro;
+package electricity;
 
 import core.EmailManager;
 
@@ -13,14 +13,14 @@ import java.util.List;
  * Time: 7:05 PM
  */
 public class OfficeWorker implements Observer {
-    
+
     private String firstName;
     private String lastName;
     private String email;
     private List<String> streets;
 
     public OfficeWorker() {
-        this.streets = new ArrayList<String>();
+        this.streets = new ArrayList<>();
     }
 
     public OfficeWorker(String firstName, String lastName, String email, List<String> streets) {
@@ -29,12 +29,12 @@ public class OfficeWorker implements Observer {
         this.email = email;
         this.streets = streets;
     }
-    
+
     public OfficeWorker(String firstName, String lastName, String email, String street) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.streets = new ArrayList<String>();
+        this.streets = new ArrayList<>();
         this.streets.add(street);
     }
 
@@ -57,7 +57,7 @@ public class OfficeWorker implements Observer {
         c.add(Calendar.DATE, 1);
         Date tomorrow = c.getTime();
 
-        emailManager.sendEmail(this.email,"Power cuts at " + tomorrow, "Electricity will turn off on the st. " + street + ", at " + time);
+        emailManager.sendEmail(this.email, "Power cuts at " + tomorrow, "Electricity will turn off on the st. " + street + ", at " + time);
     }
 
     public String getFirstName() {

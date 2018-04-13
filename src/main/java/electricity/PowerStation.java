@@ -1,4 +1,4 @@
-package electro;
+package electricity;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -18,11 +18,11 @@ public class PowerStation {
 
         ElectricalGridData electricalGridData = new ElectricalGridData();
 
-        OfficeWorker vardan = new OfficeWorker("Vardan", "Aivazian", "vardan27a@gmail.com", "Լվովյան");
+        OfficeWorker vardan = new OfficeWorker("Vardan", "Aivazian", "vardan27a@gmail.com", "Այգեստան");
         
-        OfficeWorker mher = new OfficeWorker("Mher", "Chobanyan", "mher.chobanyan@eyesoftinc.com", "Պարույր Սևակի");
+        OfficeWorker mher = new OfficeWorker("Mher", "Chobanyan", "mher.chobanyan@eyesoftinc.com", "Ծարավ Աղբյուր");
         
-        OfficeWorker edgar = new OfficeWorker("Edgar", "Yeganyan", "edgar.yeganyan@eyesoftinc.com", "Մոլդովական");
+        OfficeWorker edgar = new OfficeWorker("Edgar", "Yeganyan", "edgar.yeganyan@eyesoftinc.com", "Նալբանդյան");
         
         electricalGridData.registerObserver(vardan);
         electricalGridData.registerObserver(mher);

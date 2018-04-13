@@ -1,4 +1,4 @@
-package electro;
+package electricity;
 
 /**
  * Created by Vardan Aivazian
