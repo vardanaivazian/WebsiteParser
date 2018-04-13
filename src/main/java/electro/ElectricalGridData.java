@@ -43,11 +43,10 @@ public class ElectricNetworkData implements Subject {
         }
         for (Observer observer : this.observers) {
             for (String s : observer.getStreets()) {
-                if (this.street.contains(s) || s.contains(this.street)) {
-                    observer.update(street, time);
+                if (this.street.contains(s) /*|| s.contains(this.street)*/) {
+                    observer.update(s, time);
                 }
             }
-            
         }
     }
     

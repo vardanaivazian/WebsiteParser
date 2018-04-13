@@ -35,12 +35,12 @@ public class ElectricStation {
 
         for (Element pTag : pTags) {
             String text = pTag.text();
-            String[] parsedStreets = text.split(",");
+//            String[] parsedStreets = text.split(",");
 
             String time = pTag.select("u").text();
-            for (String street : parsedStreets) {
-                electricNetworkData.setElGraphic(street, time);
-            }
+//            for (String street : parsedStreets) {
+                electricNetworkData.setElGraphic(text, time);
+//            }
         }
     }
     

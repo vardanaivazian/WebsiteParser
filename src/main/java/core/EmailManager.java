@@ -16,7 +16,7 @@ public class SendEmail {
         String to = "nadrav27@gmail.com";
 
         // Sender's email ID needs to be mentioned
-        String from = "info@eyesoftinc.com";
+        String from = "vardan27a@gmail.com";
 
         // Assuming you are sending email from localhost
         String host = "localhost";
