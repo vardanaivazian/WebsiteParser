@@ -1,6 +1,10 @@
 package electro;
 
+import core.EmailManager;
+
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -44,6 +48,16 @@ public class OfficeWorker implements Observer {
         System.out.println("send email: street: " + street + ", time: " + time);
         System.out.println(this.toString());
         System.out.println("-------------------------------------------------------------------------");
+
+        EmailManager emailManager = new EmailManager();
+
+        Date dt = new Date();
+        Calendar c = Calendar.getInstance();
+        c.setTime(dt);
+        c.add(Calendar.DATE, 1);
+        Date tomorrow = c.getTime();
+
+        emailManager.sendEmail(this.email,"Power cuts at " + tomorrow, "Electricity will turn off on the st. " + street + ", at " + time);
     }
 
     public String getFirstName() {

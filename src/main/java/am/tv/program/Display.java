@@ -1,7 +1,5 @@
 package am.tv.program;
 
-import electro.ElectricNetwork;
-
 import java.io.IOException;
 
 /**
@@ -26,11 +24,6 @@ public class Display {
         TVProgram h1TVProgram = parser.getH1TVProgram();
 
         System.out.println(h1TVProgram.toString());
-
-        /*ElectricNetwork electricNetwork = new ElectricNetwork();
-        ElectricNetwork.Graphic graphic = electricNetwork.getGraphic("Սայաթ-Նովա պող. 10, 12 շենքերը");
-
-        System.out.println(graphic);*/
         
 
 

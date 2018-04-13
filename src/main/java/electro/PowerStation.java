@@ -12,11 +12,11 @@ import java.io.IOException;
  * Date: 4/12/2018
  * Time: 7:01 PM
  */
-public class ElectricStation {
+public class PowerStation {
 
     public static void main(String[] args) throws IOException {
 
-        ElectricNetworkData electricNetworkData = new ElectricNetworkData();
+        ElectricalGridData electricalGridData = new ElectricalGridData();
 
         OfficeWorker vardan = new OfficeWorker("Vardan", "Aivazian", "vardan27a@gmail.com", "Լվովյան");
         
@@ -24,9 +24,9 @@ public class ElectricStation {
         
         OfficeWorker edgar = new OfficeWorker("Edgar", "Yeganyan", "edgar.yeganyan@eyesoftinc.com", "Մոլդովական");
         
-        electricNetworkData.registerObserver(vardan);
-        electricNetworkData.registerObserver(mher);
-        electricNetworkData.registerObserver(edgar);
+        electricalGridData.registerObserver(vardan);
+        electricalGridData.registerObserver(mher);
+        electricalGridData.registerObserver(edgar);
 
 
 
@@ -39,7 +39,7 @@ public class ElectricStation {
 
             String time = pTag.select("u").text();
 //            for (String street : parsedStreets) {
-                electricNetworkData.setElGraphic(text, time);
+                electricalGridData.setElGraphic(text, time);
 //            }
         }
     }

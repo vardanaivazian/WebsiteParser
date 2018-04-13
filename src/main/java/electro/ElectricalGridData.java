@@ -1,8 +1,6 @@
 package electro;
 
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -10,23 +8,15 @@ import java.util.List;
  * Date: 4/12/2018
  * Time: 6:52 PM
  */
-public class ElectricNetworkData implements Subject {
-
-    private Date date;
+public class ElectricalGridData implements Subject {
+    
     private String street;
     private String time;
     
     private List<Observer> observers;
 
-    public ElectricNetworkData() {
+    public ElectricalGridData() {
         this.observers = new ArrayList<Observer>();
-
-        Date dt = new Date();
-        Calendar c = Calendar.getInstance();
-        c.setTime(dt);
-        c.add(Calendar.DATE, 1);
-        this.date = c.getTime();
-        
     }
 
     public void registerObserver(Observer observer) {
